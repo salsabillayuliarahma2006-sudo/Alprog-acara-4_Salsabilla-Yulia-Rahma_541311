@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<!--Tag pembuka HTML, dengan atribut lang="id" yang menunjukkan bahasa utama dokumen adalah 
+Bahasa Indonesia.-->
+<head>
+<!--Bagian kepala dokumen yang berisi metadata, judul halaman, dan definisi gaya (CSS).-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Statistik - Kabupaten Pasuruan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid #333;
+        }
+
+        .header {
+            background-color: white;
+            padding: 15px;
+            border-bottom: 2px solid #333;
+            text-align: right;
+        }
+
+        .login-text {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .title-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid #333;
+            background-color: white;
+        }
+
+        .logo {
+            width: 120px;
+            min-width: 120px;
+            height: 120px;
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .title {
+            flex: 1;
+        }
+
+        .title h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .title h2 {
+            font-size: 28px;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .content-section {
+            display: flex;
+            border-bottom: 2px solid #333;
+        }
+
+        .sidebar {
+            width: 200px;
+            min-width: 200px;
+            padding: 20px;
+            border-right: 2px solid #333;
+            background-color: white;
+        }
+
+        .sidebar h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            font-size: 12px;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .table-title {
+            background-color: #d0d0d0;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+
+        th {
+            background-color: #e0e0e0;
+            border: 1px solid #999;
+            padding: 8px 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid #999;
+            padding: 6px 5px;
+            text-align: center;
+        }
+
+        td:first-child {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .footer-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .footer-text {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .footer-address {
+            font-size: 11px;
+            line-height: 1.6;
+        }
+    </style>
+    <!-- style berisi seluruh aturan CSS untuk mengatur tampilan elemen-elemen di halaman web, 
+     seperti Menentukan ukuran area logo dan jarak ke teks judul.Mengatur ukuran, ketebalan, 
+     dan gaya huruf pada teks “SISTEM INFORMASI STATISTIK” dan “KABUPATEN PASURUAN”.Menempatkan 
+     teks judul di tengah (meskipun tag <center> sudah jarang digunakan, masih berfungsi).
+        Membuat area isi (konten) terbagi dua kolom: sidebar dan tabel utama.dll-->
+</head>
+<body>
+    <div class="container">
+    <!--Wadah utama seluruh isi halaman. Membatasi lebar dan memusatkan.-->
+        <div class="title-section">
+            <!--digunakan untuk memulai baris judul (logo + teks).-->
+            <div class="logo">
+                <img src="logo pasuruan.png" alt="Logo Kabupaten Pasuruan">
+            </div>
+            <!--div class="logo" Menampilkan logo. src menunjuk file gambar 
+            lokal — pastikan nama file dan path benar. alt penting untuk aksesibilitas-->
+            <!--/div Menutup wadah judul.-->
+            <div class="title">
+                <center>
+                <!-- center digunakan agar tulisan berada di tengah tabel-->
+                <h1>SISTEM INFORMASI STATISTIK</h1>
+                <!--sebagai judul utama-->
+                <h2>KABUPATEN PASURUAN</h2>
+                <!--sebagai sub judul-->
+            </div>
+        </div>
+        <!--/div Menutup wadah judul.-->
+        <div class="content-section">
+        <!--Memulai kolom konten-->
+            <div class="sidebar">
+                <!--Memulai kolom informasi kiri.-->
+                <h3>Informasi</h3>
+                <!--Judul kecil di sidebar.-->
+                <ul>
+                    <li>Kabupaten Pasuruan merupakan salah satu daerah di Provinsi Jawa Timur 
+                        dengan ibu kota berada di Bangil dan luas wilayah sekitar 1.474,02 km². 
+                        Perekonomian daerah ini didominasi oleh sektor industri, pertanian, 
+                        perdagangan, dan pariwisata, terutama di kawasan Pandaan, Gempol, dan 
+                        Beji yang menjadi pusat pertumbuhan.</li><justify>
+                </ul>
+                <!--Satu item daftar (kamu memasukkan paragraf panjang sebagai satu <li>). 
+                    Catatan: jangan gunakan <justify> karena itu bukan tag HTML standar; 
+                        untuk perataan gunakan CSS (text-align: justify;).-->
+            </div>
+            <!--/div Menutup wadah judul.-->
+            <div class="main-content">
+            <!--Memulai kolom utama.-->
+                <div class="table-title">Tabel Penduduk</div>
+                <!--Judul area tabel.-->
+                <table>
+                <!--Tabel data — berisi <thead> (header kolom) dan <tbody> (isi data).-->
+                    <thead>
+                        <tr>
+                            <th>Kecamatan</th>
+                            <th>Luas<br>Wilayah<br>(km²)</th>
+                            <th>Jumlah<br>Penduduk<br>(jiwa)</th>
+                            <th>Kepadatan<br>Penduduk<br>(jiwa/km²)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Contoh baris data -->
+                    <!--Mulai bagian isi tabel. Setiap baris idealnya menggunakan <tr>...</tr> 
+                    dan di dalamnya <td-->
+                        <tr>
+                            <td>Bangil</td>
+                            <td>44,60 km²</td>
+                            <td>84.067 jiwa</td>
+                            <td>1.887 jiwa/km²</td>
+                        </tr>
+                        <tr>
+                            <td>Beji</td>
+                            <td>39,90 km²</td>
+                            <td>86.857 jiwa</td>
+                            <td>2.176 jiwa/km²</td>
+                        </tr>
+                        <tr>
+                            <td>Gempol</td>
+                            <td>64,92 km²</td>
+                            <td>128.987 jiwa</td>
+                            <td>1.987 jiwa/km²</td>
+                        </tr>
+                        <tr>
+                            <td>Pandaan</td>
+                            <td>43,27 km²</td>
+                            <td>111.651 jiwa</td>
+                            <td>2.579 jiwa/km²</td>
+                        </tr>
+                        <td>Purwodadi</td>
+                            <td>102,46 km²</td>
+                            <td>71.350 jiwa</td>
+                            <td>696.37 jiwa/km²</td>
+                        </tr>
+                        <td>Tutur</td>
+                            <td>86,30 km²</td>
+                            <td>55.110 jiwa</td>
+                            <td>638.59 jiwa/km²</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Menutup isi tabel.-->
+            </div>
+            <!--Menutup kolom utama.-->
+        </div>
+        <!--Menutup area konten.-->
+        <div class="footer">
+        <!--Menutup area konten.-->
+            <div class="footer-logo">
+                <img src="logo pasuruan.png" alt="Logo Kabupaten Pasuruan">
+                <!--untuk menampilkan logo di footer-->
+            </div>
+            <!--Menutup area konten.-->
+            <div class="footer-text">Pemerintah Kabupaten Pasuruan</div>
+            <!--berisi Teks institusi pada footer.-->
+            <div class="footer-address">
+                Kompleks Perkantoran Pemerintah Kabupaten Pasuruan, Jalan Raya Raci 
+                Km. 9, Bangil, Kabupaten Pasuruan, Jawa Timur, 67153.<br>
+                (0343) 429064
+            <!--berisi Alamat perkantoran & nomor telepon.-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--</div> (menutup .container lalu </body> lalu </html>)Menutup container, body, 
+dan dokumen HTML.-->
